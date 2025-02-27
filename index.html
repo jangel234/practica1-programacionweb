@@ -3,38 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/practica1/practica1-programacionweb/styles/style.css">
     <title>Free  lancer</title>
 </head>
 <body>
-    <div>
-        <header>
-            <h1><a>Programacion web</a> facultad de telematica</h1>
-        </header>
-    </div>
-    <div>
-        <nav>
-            <div>
-                <a>Inicio</a>
-            </div>
-            <div>
-                <a>Sobre Nosotros</a>
-            </div>
-            <div>
-                <a>Clientes</a>
-            </div>
-            <div>
-                <a>Contacto</a>
-            </div>
-        </nav>
-    </div>
-    <div>
+    <header>
+        <h1>Programadores Web <a id="factel">Facultad de telematica</a></h1>
+    </header>
+    <nav id="init">
+        <a href="#init">Inicio</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#clientsnohay">Clientes</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <section class="hero">
         <h2>Diseño y Desarrollo Web Freelancer</h2>
-        <img style="height: 40px; width: 40px;" src="/practica1/styles/globeico.png">
-        <a>Colima, Col.</a>
-        <input type="button" value="CONTACTAR">
+        <div class="icocol">
+            <img id="globeico" src="/practica1/practica1-programacionweb/styles/globeico.png">
+            <p>Colima, Col.</p>
+        </div>
+        <a href="#contact"><button class="btncontactar">CONTACTAR</button></a>
+    </section>
+
+    <div class="services" id="about">
+            <div class="dweb">
+                <p>Diseño web</p>
+                <center>
+                    <div class="yellowcircle">
+                        <img src="/practica1/practica1-programacionweb/styles/imgdweb.png" id="icomini">
+                    </div>
+                </center>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam explicabo, 
+                    minus impedit quos recusandae nostrum ullam tempora quas? Repellat, explicabo. 
+                    Corporis accusantium nihil nostrum vel dolores? Qui neque aliquam nulla?</p>
+            </div>
+            <div class="aweb">
+                <p>Aplicaciones web</p>
+                <center>
+                    <div class="yellowcircle">
+                        <img src="/practica1/practica1-programacionweb/styles/androidaweb.png" id="icomini">
+                        <img src="/practica1/practica1-programacionweb/styles/appleaweb.png" id="icomini">
+                    </div>
+                </center>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam explicabo, 
+                    minus impedit quos recusandae nostrum ullam tempora quas? Repellat, explicabo. 
+                    Corporis accusantium nihil nostrum vel dolores? Qui neque aliquam nulla?</p>
+            </div>
+            <div class="ecommerce">
+                <p>E-Commerce</p>
+                <center>
+                    <div class="yellowcircle">
+                        <img src="/practica1/practica1-programacionweb/styles/ecommerce.png" id="icomini">
+                    </div>
+                </center>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam explicabo, 
+                    minus impedit quos recusandae nostrum ullam tempora quas? Repellat, explicabo. 
+                    Corporis accusantium nihil nostrum vel dolores? Qui neque aliquam nulla?</p>
+            </div>
     </div>
-    <div>
-        
-    </div>
+
+    <section class="contact" id="contact">
+        <h2>Contacto</h2>
+        <div class="form">
+            <p>CONTACTÁNOS LLENANDO TODOS LOS CAMPOS</p>
+            <form>
+                <div class="pairinput">
+                    <input type="text" placeholder="Nombre">
+                    <input type="number" placeholder="Teléfono">
+                </div>
+                <input type="email" placeholder="Correo">
+                <textarea placeholder="Mensaje"></textarea>
+                <div class="divbutton">
+                    <button type="submit" class="btncontactar">ENVIAR</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Todos los derechos reservados. Actividad en grupo | Facultad de Telemática</p>
+    </footer>
 </body>
 </html>
